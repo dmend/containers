@@ -14,6 +14,6 @@ buildah config --port 3306 $container
 buildah config --volume /var/lib/mysql $container
 buildah config --user mysql $container
 
-buildah config --cmd /usr/libexec/mysqd $container
+buildah config --cmd /usr/libexec/mysqld $container
 
 buildah commit $container mariadb
